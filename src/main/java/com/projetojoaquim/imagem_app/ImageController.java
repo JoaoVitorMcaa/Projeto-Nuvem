@@ -12,6 +12,7 @@ import java.io.IOException;
 @RestController
 public class ImageController {
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/api/foto")
     public ResponseEntity<Resource> enviarFoto() throws IOException {
         // Agora apontamos para a pasta static
